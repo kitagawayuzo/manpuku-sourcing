@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>買いニーズシート｜まん福ホールディングス株式会社</title>
+<meta name="description" content="まん福ホールディングスは「日本の食に特化した唯一無二の事業承継プラットフォーム」です。寿司・焼肉・居酒屋・ラーメンを中心に、食関連企業の事業承継案件を募集しています。">
+<meta property="og:title" content="買いニーズシート｜まん福ホールディングス株式会社">
+<meta property="og:description" content="日本の食に特化した事業承継プラットフォーム。寿司・焼肉・居酒屋・ラーメンを中心に、食関連企業の承継案件を募集中。">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --red: #C41E3A;
+    --dark: #1a1a1a;
+    --gray: #555;
+    --light-gray: #f7f7f7;
+    --border: #e0e0e0;
+    --accent-bg: #FFF5F5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+    color: var(--dark);
+    line-height: 1.8;
+    background: #fff;
+  }
+
+  /* Hero */
+  .hero {
+    background: #fff;
+    color: var(--dark);
+    text-align: center;
+    padding: 60px 20px 50px;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-logo {
+    width: 72px; height: 72px;
+    border: 3px solid var(--red);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px; font-weight: bold;
+    color: var(--red);
+    background: rgba(255,255,255,0.05);
+  }
+  .hero h1 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: var(--gray);
+    margin-bottom: 8px;
+  }
+  .hero h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .hero p {
+    font-size: 14px;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Main */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* CTA bar */
+  .cta-bar {
+    background: var(--red);
+    color: #fff;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .cta-bar a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 17px;
+  }
+
+  /* Section */
+  .section {
+    padding: 40px 0 30px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+  .section-number {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+  .section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 18px;
+  }
+
+  /* Info grid */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 0;
+  }
+  .info-grid dt {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--gray);
+    padding: 10px 12px 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .info-grid dd {
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Tag list */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .tag {
+    display: inline-block;
+    background: var(--accent-bg);
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(196,30,58,0.15);
+  }
+  .tag.primary {
+    background: var(--red);
+    color: #fff;
+    border-color: var(--red);
+  }
+
+  /* Highlight box */
+  .highlight-box {
+    background: var(--accent-bg);
+    border-left: 4px solid var(--red);
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .highlight-box .big-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--red);
+  }
+  .highlight-box .label {
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  /* Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .card {
+    background: var(--light-gray);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--red);
+  }
+  .card p { font-size: 13px; color: var(--gray); }
+
+  /* List items */
+  .check-list { list-style: none; padding: 0; }
+  .check-list li {
+    position: relative;
+    padding: 6px 0 6px 24px;
+    font-size: 14px;
+  }
+  .check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  /* Republic section */
+  .republic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .republic {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+  }
+  .republic h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .republic .sub { font-size: 12px; color: var(--gray); margin-bottom: 8px; }
+  .republic ul {
+    list-style: none; padding: 0;
+    font-size: 13px; color: var(--dark);
+  }
+  .republic ul li { padding: 2px 0; }
+
+  /* 3-pattern */
+  .pattern-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .pattern {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+  }
+  .pattern h4 { font-size: 14px; margin-bottom: 6px; color: var(--red); }
+  .pattern p { font-size: 12px; color: var(--gray); }
+
+  /* PMI steps */
+  .pmi-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .pmi-step {
+    background: var(--light-gray);
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pmi-step .num {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 6px;
+  }
+  .pmi-step h5 {
+    display: inline;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .pmi-step p { font-size: 13px; color: var(--gray); margin-top: 6px; }
+
+  /* Flow */
+  .flow {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 16px 0;
+    flex-wrap: wrap;
+  }
+  .flow-step {
+    background: var(--light-gray);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .flow-arrow {
+    font-size: 16px;
+    color: var(--red);
+    padding: 0 6px;
+  }
+
+  /* Contact */
+  .contact-box {
+    background: var(--dark);
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  .contact-box h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .contact-box p {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .contact-email {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+  .contact-email:hover { opacity: 0.9; }
+  .contact-note {
+    margin-top: 16px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .hero h2 { font-size: 20px; }
+    .info-grid { grid-template-columns: 1fr; }
+    .info-grid dt { border-bottom: none; padding-bottom: 0; }
+    .card-grid, .republic-grid, .pmi-steps { grid-template-columns: 1fr; }
+    .pattern-grid { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: flex-start; }
+    .flow-arrow { transform: rotate(90deg); padding: 4px 0; }
+    .contact-box { padding: 24px 16px; }
+    .contact-email { font-size: 15px; padding: 10px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <img src="logo.png" alt="まん福ホールディングス" style="width:160px; height:auto; margin: 0 auto 16px; display:block;">
+  <h1>MANPUKU HOLDINGS</h1>
+  <h2>買いニーズシート</h2>
+  <p>日本の食に特化した唯一無二の事業承継プラットフォーム<br>
+  「日本の食」を未来につなぎ、世界に広げる</p>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  案件情報のご連絡はこちら &rarr; <a href="mailto:ma.g7as2@admin-ma.jp">ma.g7as2@admin-ma.jp</a>
+</div>
+
+<div class="container">
+
+<!-- 1. 会社概要 -->
+<div class="section">
+  <span class="section-number">01</span>
+  <h3>会社概要</h3>
+  <dl class="info-grid">
+    <dt>会社名</dt>
+    <dd>まん福ホールディングス株式会社</dd>
+    <dt>代表者</dt>
+    <dd>代表取締役社長（CEO）加藤 智治</dd>
+    <dt>設立</dt>
+    <dd>2021年4月</dd>
+    <dt>ミッション</dt>
+    <dd>「うまい」でこの星をしあわせ一杯に。</dd>
+    <dt>事業概要</dt>
+    <dd>飲食業・食品製造・食品卸など食関連の中小企業を承継し、「エリア共和国」構想のもとグループ全体でバリューチェーンを統合。国内13社・海外1社をグループ化。創業年数合計500年超の歴史を承継。</dd>
+  </dl>
+</div>
+
+<!-- 2. 経営チーム -->
+<div class="section">
+  <span class="section-number">02</span>
+  <h3>経営チーム</h3>
+  <p style="font-size:14px; color:var(--gray); margin-bottom:14px;">食関連企業の経営・執行経験者が多数在籍し、プロフェッショナル人材と融合した成熟度の高いチームを組成</p>
+  <div class="card-grid">
+    <div class="card">
+      <h4>CEO 加藤 智治</h4>
+      <p>マッキンゼー出身。あきんどスシロー取締役COOとして回転寿司売上日本一・顧客満足度日本一に貢献。ゼビオ代表取締役社長を歴任。食べログ運営カカクコム社外取締役。</p>
+    </div>
+    <div class="card">
+      <h4>COO 戸倉 大輔</h4>
+      <p>ゼンショーにて営業企画室長を歴任。グループ営業推進本部長として事業改革を牽引。</p>
+    </div>
+    <div class="card">
+      <h4>CFO 元 斗鉉</h4>
+      <p>東京大学卒。モルガン・スタンレー投資銀行部門でM&A業務を担当。香港ヘッジファンドを経て参画。</p>
+    </div>
+    <div class="card">
+      <h4>CPO 九嶋 広一</h4>
+      <p>購買・物流のエキスパート。グループMD本部長として調達から供給まで一貫プロセスを指揮。</p>
+    </div>
+  </div>
+  <p style="font-size:13px; color:var(--gray); margin-top:12px;">他にも、ミシュラン3つ星シェフ、大手金融機関元CEO等がSpecial Advisorとして参画。</p>
+</div>
+
+<!-- 3. M&A実績 -->
+<div class="section">
+  <span class="section-number">03</span>
+  <h3>M&A実績</h3>
+
+  <div style="display:flex; gap:20px; flex-wrap:wrap;">
+    <div class="highlight-box" style="flex:1; min-width:200px;">
+      <div class="big-number">14件</div>
+      <div class="label">成約実績（国内13社＋海外1社）</div>
+    </div>
+    <div class="highlight-box" style="flex:1; min-width:200px;">
+      <div class="big-number">82%</div>
+      <div class="label">LOI提出ベースの成約率</div>
+    </div>
+    <div class="highlight-box" style="flex:1; min-width:200px;">
+      <div class="big-number">500年+</div>
+      <div class="label">グループ合計の創業年数</div>
+    </div>
+  </div>
+
+  <p style="font-size:14px; margin-top:16px;">創業5年で14案件を成約。LOI提出ベースの成約率82%は業界平均を大幅に上回ります。</p>
+
+  <h4 style="margin-top:20px; font-size:16px; font-weight:700;">3つの承継パターン</h4>
+  <p style="font-size:13px; color:var(--gray); margin-bottom:8px;">売り手オーナー様の状況・ご希望に応じて、最適なスキームをご提案</p>
+  <div class="pattern-grid">
+    <div class="pattern">
+      <h4>Exit型</h4>
+      <p>100%承継<br>社長勇退／弊社承継<br>ドラスティックな改革が可能</p>
+    </div>
+    <div class="pattern">
+      <h4>Happy Group Join型</h4>
+      <p>100%承継<br>社長継続／御子息承継<br>経営は継続しグループシナジーを追求</p>
+    </div>
+    <div class="pattern">
+      <h4>Partnership型</h4>
+      <p>JV（過半数は承継）<br>社長継続／創業者関与<br>地元金融機関との3社共同出資も</p>
+    </div>
+  </div>
+</div>
+
+<!-- 4. エリア共和国 -->
+<div class="section">
+  <span class="section-number">04</span>
+  <h3>グループ企業（4つのエリア共和国）</h3>
+  <p style="font-size:14px; color:var(--gray); margin-bottom:14px;">中小企業が協力し合い発展する「エリア共和国」を全国に創造し、共和国同士もグループとして連携</p>
+
+  <div class="republic-grid">
+    <div class="republic">
+      <h4>北海道寿司共和国</h4>
+      <div class="sub">寿司ネタとなる魚卵・貝類の国内生産90%</div>
+      <ul>
+        <li>札幌海鮮丸（寿司デリバリー道内No.1）</li>
+        <li>寿し心なかむら（大衆寿司店）</li>
+        <li>タイタス / 花いちもんめ（回転寿司）</li>
+      </ul>
+    </div>
+    <div class="republic">
+      <h4>南関東肉共和国</h4>
+      <div class="sub">国内GDP 33.7%の最大消費地</div>
+      <ul>
+        <li>サンフレッシュミート / 焼肉山河（食肉加工卸・焼肉店）</li>
+        <li>浜田屋（仕出し弁当）</li>
+        <li>ハッピー商会（地域密着型精肉店）</li>
+        <li>フードフォレスト/とろろや（和定食屋）</li>
+      </ul>
+    </div>
+    <div class="republic">
+      <h4>熊本肉共和国</h4>
+      <div class="sub">牛豚鶏の国内生産60%以上が九州</div>
+      <ul>
+        <li>オオツカ（あか牛専門 食肉卸・小売・外食）</li>
+        <li>さくらや食産（食肉加工）</li>
+        <li>オグラドルフィン / おぐらの唐揚（唐揚げ）</li>
+      </ul>
+    </div>
+    <div class="republic">
+      <h4>静岡魚共和国</h4>
+      <div class="sub">焼津は漁獲高日本一の港</div>
+      <ul>
+        <li>山佐食品（水産加工B2B）</li>
+        <li>かねか水産（水産加工）</li>
+        <li>植草水産（水産加工）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 5. 投資基準 -->
+<div class="section">
+  <span class="section-number">05</span>
+  <h3>投資基準（こんな案件を探しています）</h3>
+
+  <h4 style="font-size:16px; font-weight:700; margin-bottom:10px;">注力4ジャンル</h4>
+  <div class="tags">
+    <span class="tag primary">寿司</span>
+    <span class="tag primary">焼肉</span>
+    <span class="tag primary">居酒屋</span>
+    <span class="tag primary">ラーメン</span>
+  </div>
+  <p style="font-size:13px; color:var(--gray); margin:8px 0 18px;">グループ間シナジー拡大に向け、上記4ジャンルを最重点でソーシング中</p>
+
+  <h4 style="font-size:14px; font-weight:700; margin-bottom:6px;">対象業種（重点）</h4>
+  <div class="tags" style="margin-bottom:12px;">
+    <span class="tag">水産加工</span>
+    <span class="tag">弁当・惣菜</span>
+    <span class="tag">和食・定食</span>
+    <span class="tag">食品製造・メーカー</span>
+  </div>
+
+  <h4 style="font-size:14px; font-weight:700; margin-bottom:6px;">対象業種（検討可）</h4>
+  <p style="font-size:14px; margin-bottom:18px;">上記以外の食関連事業も柔軟に検討（製菓・製パン、農産物加工、食品EC、食品物流、ケータリング、フードテック等）</p>
+
+  <dl class="info-grid">
+    <dt>対象エリア（国内）</dt>
+    <dd>
+      <strong>最重点：</strong>北海道、南関東（東京・神奈川・埼玉・千葉）、熊本・九州、静岡（焼津・浜松）、中四国<br>
+      <strong>その他：</strong>上記以外も食に関する優良案件は全国対象。
+    </dd>
+    <dt>売上規模</dt>
+    <dd>年商1億円～30億円を中心に検討。大型案件（売上100億円以上）も対応可能。</dd>
+    <dt>営業利益</dt>
+    <dd>黒字企業を優先。ただし、売上が安定/成長基調、コスト構造の改善余地が明確、ブランド力・立地・技術など非財務的強みがある先は赤字でも前向きに検討。</dd>
+    <dt>買収形態</dt>
+    <dd>株式譲渡（100%取得が基本）、事業譲渡いずれも可。株式交換やJVにも柔軟に対応。</dd>
+  </dl>
+
+  <h4 style="font-size:14px; font-weight:700; margin-top:18px; margin-bottom:8px;">特に重視するポイント</h4>
+  <ul class="check-list">
+    <li>地域で愛されるブランド・のれんがあること（創業からの歴史・伝統があるほど歓迎）</li>
+    <li>自社工場、自社店舗、独自の仕入れルート、買参権など模倣困難な資産</li>
+    <li>従業員が一定数残留する見込みがあること</li>
+    <li>既存グループ企業とのシナジーが見込めること</li>
+  </ul>
+</div>
+
+<!-- 6. 意思決定スピード -->
+<div class="section">
+  <span class="section-number">06</span>
+  <h3>意思決定プロセス</h3>
+
+  <div class="flow">
+    <div class="flow-step">案件情報受領</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">ネームクリア<br><small style="color:var(--red);font-weight:700;">即日〜3営業日</small></div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">詳細検討<br><small>1〜2週間</small></div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">オーナー面談</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">LOI提出<br><small>面談後1〜2週間</small></div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">DD・クロージング</div>
+  </div>
+
+  <div class="highlight-box">
+    <p style="font-size:14px;">案件情報をお送りいただければ、<strong style="color:var(--red);">原則翌営業日中</strong>に初期的な関心有無をご回答いたします。<br>
+    LOI提出ベースの成約率82%が示す通り、「検討したが見送り」となるケースは極めて少なく、効率の良い買い手であると自負しております。</p>
+  </div>
+
+  <dl class="info-grid">
+  </dl>
+</div>
+
+<!-- 7. 承継方針・PMI -->
+<div class="section">
+  <span class="section-number">07</span>
+  <h3>承継方針・PMI</h3>
+
+  <div class="highlight-box">
+    <p style="font-size:15px; font-weight:700; color:var(--red);">永久保有型 ─ ファンドとは異なる「第三の選択肢」</p>
+    <p style="font-size:14px; margin-top:6px;">一度お預かりした事業は、長期的視点で育て、次の世代へつなぎます。<br>屋号・ブランドの存続、従業員全員残留が基本方針。人員削減は行いません。</p>
+  </div>
+
+  <h4 style="font-size:15px; font-weight:700; margin:18px 0 10px;">標準化されたPMI手法</h4>
+  <div class="pmi-steps">
+    <div class="pmi-step">
+      <span class="num">1</span><h5>アクションプランの設計</h5>
+      <p>必要な人員・時間・予算をあらかじめ計画。効率的なリソース配分を実現。</p>
+    </div>
+    <div class="pmi-step">
+      <span class="num">2</span><h5>労務・法務リスクの早期解決</h5>
+      <p>過重労働・賃金・勤怠の適正化。従業員満足度の維持と労働関連訴訟リスクの回避。</p>
+    </div>
+    <div class="pmi-step">
+      <span class="num">3</span><h5>組織構築</h5>
+      <p>既存社員を中心とした改革推進体制。安定性の確保→文化の融合→信頼の維持。</p>
+    </div>
+    <div class="pmi-step">
+      <span class="num">4</span><h5>組織文化の変革</h5>
+      <p>会議体の改善、小さな成功体験の積み重ね。全員参加のポジティブな変化を実感。</p>
+    </div>
+  </div>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>買いニーズシート｜まん福ホールディングス株式会社</title>
+<meta name="description" content="まん福ホールディングスは「日本の食に特化した唯一無二の事業承継プラットフォーム」です。寿司・焼肉・居酒屋・ラーメンを中心に、食関連企業の事業承継案件を募集しています。">
+<meta property="og:title" content="買いニーズシート｜まん福ホールディングス株式会社">
+<meta property="og:description" content="日本の食に特化した事業承継プラットフォーム。寿司・焼肉・居酒屋・ラーメンを中心に、食関連企業の承継案件を募集中。">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --red: #C41E3A;
+    --dark: #1a1a1a;
+    --gray: #555;
+    --light-gray: #f7f7f7;
+    --border: #e0e0e0;
+    --accent-bg: #FFF5F5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+    color: var(--dark);
+    line-height: 1.8;
+    background: #fff;
+  }
+
+  /* Hero */
+  .hero {
+    background: #fff;
+    color: var(--dark);
+    text-align: center;
+    padding: 60px 20px 50px;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-logo {
+    width: 72px; height: 72px;
+    border: 3px solid var(--red);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px; font-weight: bold;
+    color: var(--red);
+    background: rgba(255,255,255,0.05);
+  }
+  .hero h1 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: var(--gray);
+    margin-bottom: 8px;
+  }
+  .hero h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .hero p {
+    font-size: 14px;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Main */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* CTA bar */
+  .cta-bar {
+    background: var(--red);
+    color: #fff;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .cta-bar a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 17px;
+  }
+
+  /* Section */
+  .section {
+    padding: 40px 0 30px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+  .section-number {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+  .section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 18px;
+  }
+
+  /* Info grid */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 0;
+  }
+  .info-grid dt {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--gray);
+    padding: 10px 12px 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .info-grid dd {
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Tag list */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .tag {
+    display: inline-block;
+    background: var(--accent-bg);
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(196,30,58,0.15);
+  }
+  .tag.primary {
+    background: var(--red);
+    color: #fff;
+    border-color: var(--red);
+  }
+
+  /* Highlight box */
+  .highlight-box {
+    background: var(--accent-bg);
+    border-left: 4px solid var(--red);
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .highlight-box .big-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--red);
+  }
+  .highlight-box .label {
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  /* Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .card {
+    background: var(--light-gray);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--red);
+  }
+  .card p { font-size: 13px; color: var(--gray); }
+
+  /* List items */
+  .check-list { list-style: none; padding: 0; }
+  .check-list li {
+    position: relative;
+    padding: 6px 0 6px 24px;
+    font-size: 14px;
+  }
+  .check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  /* Republic section */
+  .republic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .republic {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+  }
+  .republic h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .republic .sub { font-size: 12px; color: var(--gray); margin-bottom: 8px; }
+  .republic ul {
+    list-style: none; padding: 0;
+    font-size: 13px; color: var(--dark);
+  }
+  .republic ul li { padding: 2px 0; }
+
+  /* 3-pattern */
+  .pattern-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .pattern {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+  }
+  .pattern h4 { font-size: 14px; margin-bottom: 6px; color: var(--red); }
+  .pattern p { font-size: 12px; color: var(--gray); }
+
+  /* PMI steps */
+  .pmi-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .pmi-step {
+    background: var(--light-gray);
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pmi-step .num {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 6px;
+  }
+  .pmi-step h5 {
+    display: inline;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .pmi-step p { font-size: 13px; color: var(--gray); margin-top: 6px; }
+
+  /* Flow */
+  .flow {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 16px 0;
+    flex-wrap: wrap;
+  }
+  .flow-step {
+    background: var(--light-gray);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .flow-arrow {
+    font-size: 16px;
+    color: var(--red);
+    padding: 0 6px;
+  }
+
+  /* Contact */
+  .contact-box {
+    background: var(--dark);
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  .contact-box h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .contact-box p {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .contact-email {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+  .contact-email:hover { opacity: 0.9; }
+  .contact-note {
+    margin-top: 16px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .hero h2 { font-size: 20px; }
+    .info-grid { grid-template-columns: 1fr; }
+    .info-grid dt { border-bottom: none; padding-bottom: 0; }
+    .card-grid, .republic-grid, .pmi-steps { grid-template-columns: 1fr; }
+    .pattern-grid { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: flex-start; }
+    .flow-arrow { transform: rotate(90deg); padding: 4px 0; }
+    .contact-box { padding: 24px 16px; }
+    .contact-email { font-size: 15px; padding: 10px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <img src="logo.png" alt="まん福ホールディングス" style="width:160px; height:auto; margin: 0 auto 16px; display:block;">
+  <h1>MANPUKU HOLDINGS</h1>
+  <h2>買いニーズシート</h2>
+  <p>日本の食に特化した唯一無二の事業承継プラットフォーム<br>
+  「日本の食」を未来につなぎ、世界に広げる</p>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  案件情報のご連絡はこちら &rarr; <a href="mailto:ma.g7as2@admin-ma.jp">ma.g7as2@admin-ma.jp</a>
+</div>
+
+<div class="container">
+
+<!-- 1. 会社概要 -->
+<div class="section">
+  <span class="section-number">01</span>
+  <h3>会社概要</h3>
+  <dl class="info-grid">
+    <dt>会社名</dt>
+    <dd>まん福ホールディングス株式会社</dd>
+    <dt>代表者</dt>
+    <dd>代表取締役社長（CEO）加藤 智治</dd>
+    <dt>設立</dt>
+    <dd>2021年4月</dd>
+    <dt>ミッション</dt>
+    <dd>「うまい」でこの星をしあわせ一杯に。</dd>
+    <dt>事業概要</dt>
+    <dd>飲食業・食品製造・食品卸など食関連の中小企業を承継し、「エリア共和国」構想のもとグループ全体でバリューチェーンを統合。国内13社・海外1社をグループ化。創業年数合計500年超の歴史を承継。</dd>
+  </dl>
+</div>
+
+<!-- 2. 経営チーム -->
+<div class="section">
+  <span class="section-number">02</span>
+  <h3>経営チーム</h3>
+  <p style="font-size:14px; color:var(--gray); margin-bottom:14px;">食関連企業の経営・執行経験者が多数在籍し、プロフェッショナル人材と融合した成熟度の高いチームを組成</p>
+  <div class="card-grid">
+    <div class="card">
+      <h4>CEO 加藤 智治</h4>
+      <p>マッキンゼー出身。あきんどスシロー取締役COOとして回転寿司売上日本一・顧客満足度日本一に貢献。ゼビオ代表取締役社長を歴任。食べログ運営カカクコム社外取締役。</p>
+    </div>
+    <div class="card">
+      <h4>COO 戸倉 大輔</h4>
+      <p>ゼンショーにて営業企画室長を歴任。グループ営業推進本部長として事業改革を牽引。</p>
+    </div>
+    <div class="card">
+      <h4>CFO 元 斗鉉</h4>
+      <p>東京大学卒。モルガン・スタンレー投資銀行部門でM&A業務を担当。香港ヘッジファンドを経て参画。</p>
+    </div>
+    <div class="card">
+      <h4>CPO 九嶋 広一</h4>
+      <p>購買・物流のエキスパート。グループMD本部長として調達から供給まで一貫プロセスを指揮。</p>
+    </div>
+  </div>
+  <p style="font-size:13px; color:var(--gray); margin-top:12px;">他にも、ミシュラン3つ星シェフ、大手金融機関元CEO等がSpecial Advisorとして参画。</p>
+</div>
+
+<!-- 3. M&A実績 -->
+<div class="section">
+  <span class="section-number">03</span>
+  <h3>M&A実績</h3>
+
+  <div style="display:flex; gap:20px; flex-wrap:wrap;">
+    <div class="highlight-box" style="flex:1; min-width:200px;">
+      <div class="big-number">14件</div>
+      <div class="label">成約実績（国内13社＋海外1社）</div>
+    </div>
+    <div class="highlight-box" style="flex:1; min-width:200px;">
+      <div class="big-number">82%</div>
+      <div class="label">LOI提出ベースの成約率</div>
+    </div>
+    <div class="highlight-box" style="flex:1; min-width:200px;">
+      <div class="big-number">500年+</div>
+      <div class="label">グループ合計の創業年数</div>
+    </div>
+  </div>
+
+  <p style="font-size:14px; margin-top:16px;">創業5年で14案件を成約。LOI提出ベースの成約率82%は業界平均を大幅に上回ります。</p>
+
+  <h4 style="margin-top:20px; font-size:16px; font-weight:700;">3つの承継パターン</h4>
+  <p style="font-size:13px; color:var(--gray); margin-bottom:8px;">売り手オーナー様の状況・ご希望に応じて、最適なスキームをご提案</p>
+  <div class="pattern-grid">
+    <div class="pattern">
+      <h4>Exit型</h4>
+      <p>100%承継<br>社長勇退／弊社承継<br>ドラスティックな改革が可能</p>
+    </div>
+    <div class="pattern">
+      <h4>Happy Group Join型</h4>
+      <p>100%承継<br>社長継続／御子息承継<br>経営は継続しグループシナジーを追求</p>
+    </div>
+    <div class="pattern">
+      <h4>Partnership型</h4>
+      <p>JV（過半数は承継）<br>社長継続／創業者関与<br>地元金融機関との3社共同出資も</p>
+    </div>
+  </div>
+</div>
+
+<!-- 4. エリア共和国 -->
+<div class="section">
+  <span class="section-number">04</span>
+  <h3>グループ企業（4つのエリア共和国）</h3>
+  <p style="font-size:14px; color:var(--gray); margin-bottom:14px;">中小企業が協力し合い発展する「エリア共和国」を全国に創造し、共和国同士もグループとして連携</p>
+
+  <div class="republic-grid">
+    <div class="republic">
+      <h4>北海道寿司共和国</h4>
+      <div class="sub">寿司ネタとなる魚卵・貝類の国内生産90%</div>
+      <ul>
+        <li>札幌海鮮丸（寿司デリバリー道内No.1）</li>
+        <li>寿し心なかむら（大衆寿司店）</li>
+        <li>タイタス / 花いちもんめ（回転寿司）</li>
+      </ul>
+    </div>
+    <div class="republic">
+      <h4>南関東肉共和国</h4>
+      <div class="sub">国内GDP 33.7%の最大消費地</div>
+      <ul>
+        <li>サンフレッシュミート / 焼肉山河（食肉加工卸・焼肉店）</li>
+        <li>浜田屋（仕出し弁当）</li>
+        <li>ハッピー商会（地域密着型精肉店）</li>
+        <li>フードフォレスト/とろろや（和定食屋）</li>
+      </ul>
+    </div>
+    <div class="republic">
+      <h4>熊本肉共和国</h4>
+      <div class="sub">牛豚鶏の国内生産60%以上が九州</div>
+      <ul>
+        <li>オオツカ（あか牛専門 食肉卸・小売・外食）</li>
+        <li>さくらや食産（食肉加工）</li>
+        <li>オグラドルフィン / おぐらの唐揚（唐揚げ）</li>
+      </ul>
+    </div>
+    <div class="republic">
+      <h4>静岡魚共和国</h4>
+      <div class="sub">焼津は漁獲高日本一の港</div>
+      <ul>
+        <li>山佐食品（水産加工B2B）</li>
+        <li>かねか水産（水産加工）</li>
+        <li>植草水産（水産加工）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 5. 投資基準 -->
+<div class="section">
+  <span class="section-number">05</span>
+  <h3>投資基準（こんな案件を探しています）</h3>
+
+  <h4 style="font-size:16px; font-weight:700; margin-bottom:10px;">注力4ジャンル</h4>
+  <div class="tags">
+    <span class="tag primary">寿司</span>
+    <span class="tag primary">焼肉</span>
+    <span class="tag primary">居酒屋</span>
+    <span class="tag primary">ラーメン</span>
+  </div>
+  <p style="font-size:13px; color:var(--gray); margin:8px 0 18px;">グループ間シナジー拡大に向け、上記4ジャンルを最重点でソーシング中</p>
+
+  <h4 style="font-size:14px; font-weight:700; margin-bottom:6px;">対象業種（重点）</h4>
+  <div class="tags" style="margin-bottom:12px;">
+    <span class="tag">水産加工</span>
+    <span class="tag">弁当・惣菜</span>
+    <span class="tag">和食・定食</span>
+    <span class="tag">食品製造・メーカー</span>
+  </div>
+
+  <h4 style="font-size:14px; font-weight:700; margin-bottom:6px;">対象業種（検討可）</h4>
+  <p style="font-size:14px; margin-bottom:18px;">上記以外の食関連事業も柔軟に検討（製菓・製パン、農産物加工、食品EC、食品物流、ケータリング、フードテック等）</p>
+
+  <dl class="info-grid">
+    <dt>対象エリア（国内）</dt>
+    <dd>
+      <strong>最重点：</strong>北海道、南関東（東京・神奈川・埼玉・千葉）、熊本・九州、静岡（焼津・浜松）、中四国<br>
+      <strong>その他：</strong>上記以外も食に関する優良案件は全国対象。
+    </dd>
+    <dt>売上規模</dt>
+    <dd>年商1億円～30億円を中心に検討。大型案件（売上100億円以上）も対応可能。</dd>
+    <dt>営業利益</dt>
+    <dd>黒字企業を優先。ただし、売上が安定/成長基調、コスト構造の改善余地が明確、ブランド力・立地・技術など非財務的強みがある先は赤字でも前向きに検討。</dd>
+    <dt>買収形態</dt>
+    <dd>株式譲渡（100%取得が基本）、事業譲渡いずれも可。株式交換やJVにも柔軟に対応。</dd>
+  </dl>
+
+  <h4 style="font-size:14px; font-weight:700; margin-top:18px; margin-bottom:8px;">特に重視するポイント</h4>
+  <ul class="check-list">
+    <li>地域で愛されるブランド・のれんがあること（創業からの歴史・伝統があるほど歓迎）</li>
+    <li>自社工場、自社店舗、独自の仕入れルート、買参権など模倣困難な資産</li>
+    <li>従業員が一定数残留する見込みがあること</li>
+    <li>既存グループ企業とのシナジーが見込めること</li>
+  </ul>
+</div>
+
+<!-- 6. 意思決定スピード -->
+<div class="section">
+  <span class="section-number">06</span>
+  <h3>意思決定プロセス</h3>
+
+  <div class="flow">
+    <div class="flow-step">案件情報受領</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">ネームクリア<br><small style="color:var(--red);font-weight:700;">即日〜3営業日</small></div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">詳細検討<br><small>1〜2週間</small></div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">オーナー面談</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">LOI提出<br><small>面談後1〜2週間</small></div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">DD・クロージング</div>
+  </div>
+
+  <div class="highlight-box">
+    <p style="font-size:14px;">案件情報をお送りいただければ、<strong style="color:var(--red);">原則翌営業日中</strong>に初期的な関心有無をご回答いたします。<br>
+    LOI提出ベースの成約率82%が示す通り、「検討したが見送り」となるケースは極めて少なく、効率の良い買い手であると自負しております。</p>
+  </div>
+
+  <dl class="info-grid">
+  </dl>
+</div>
+
+<!-- 7. 承継方針・PMI -->
+<div class="section">
+  <span class="section-number">07</span>
+  <h3>承継方針・PMI</h3>
+
+  <div class="highlight-box">
+    <p style="font-size:15px; font-weight:700; color:var(--red);">永久保有型 ─ ファンドとは異なる「第三の選択肢」</p>
+    <p style="font-size:14px; margin-top:6px;">一度お預かりした事業は、長期的視点で育て、次の世代へつなぎます。<br>屋号・ブランドの存続、従業員全員残留が基本方針。人員削減は行いません。</p>
+  </div>
+
+  <h4 style="font-size:15px; font-weight:700; margin:18px 0 10px;">標準化されたPMI手法</h4>
+  <div class="pmi-steps">
+    <div class="pmi-step">
+      <span class="num">1</span><h5>アクションプランの設計</h5>
+      <p>必要な人員・時間・予算をあらかじめ計画。効率的なリソース配分を実現。</p>
+    </div>
+    <div class="pmi-step">
+      <span class="num">2</span><h5>労務・法務リスクの早期解決</h5>
+      <p>過重労働・賃金・勤怠の適正化。従業員満足度の維持と労働関連訴訟リスクの回避。</p>
+    </div>
+    <div class="pmi-step">
+      <span class="num">3</span><h5>組織構築</h5>
+      <p>既存社員を中心とした改革推進体制。安定性の確保→文化の融合→信頼の維持。</p>
+    </div>
+    <div class="pmi-step">
+      <span class="num">4</span><h5>組織文化の変革</h5>
+      <p>会議体の改善、小さな成功体験の積み重ね。全員参加のポジティブな変化を実感。</p>
+    </div>
+  </div>
+
+  <h4 style="font-size:15px; font-weight:700; margin:20px 0 10px;">グループシナジー</h4>
+  <ul class="check-list">
+    <li>共同仕入れによるコスト削減（肉/魚/米/調味料/資材のグループ一括調達）</li>
+    <li>グループ内クロスセル（唐揚げFC展開、弁当OEM、寿司ブランド横展開等）</li>
+    <li>経営管理の高度化（経理・人事労務の標準化と集約、DX推進）</li>
+    <li>人材交流・育成（寿司職人育成拠点、グループ内研修等）</li>
+    <li>海外展開の可能性（NY拠点を活かしたグローバル展開）</li>
+  </ul>
+</div>
+
+<!-- 8. 除外条件 -->
+<div class="section">
+  <span class="section-number">08</span>
+  <h3>除外条件</h3>
+  <p style="font-size:14px; color:var(--gray); margin-bottom:12px;">以下に該当する案件はお見送りとなる可能性が高いです</p>
+  <dl class="info-grid">
+    <dt>財務面</dt>
+    <dd>直近3期連続で営業赤字かつ回復見通しが立たない先 ／ 簿外債務が多額な先 ／ 粉飾決算の疑い</dd>
+    <dt>法務面</dt>
+    <dd>重大な食品衛生法違反・行政処分歴 ／ 反社会的勢力との関係 ／ 重大な係争中訴訟</dd>
+    <dt>事業継続性</dt>
+    <dd>主要従業員の大半が退職予定 ／ オーナーが引継ぎに非協力 ／ 極度の属人性で承継困難な先</dd>
+  </dl>
+</div>
+
+<!-- Contact -->
+<div class="contact-box">
+  <h3>案件情報をお待ちしています</h3>
+  <p>ノンネーム段階からの早期のお声がけを歓迎いたします。<br>NDAは貴社・弊社いずれのフォーマットにも対応可能です。</p>
+  <a href="mailto:ma.g7as2@admin-ma.jp" class="contact-email">ma.g7as2@admin-ma.jp</a>
+  <div class="contact-note">
+    まん福ホールディングス株式会社 ソーシング担当<br>
+    原則翌営業日中にご回答いたします
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<footer>
+  &copy; 2026 まん福ホールディングス株式会社 All rights reserved.<br>
+  本ページに記載の情報は、M&A仲介会社様・金融機関様・事業承継をご検討中のオーナー様への情報提供を目的としています。
+</footer>
+
+</body>
+</html>
